@@ -24,6 +24,7 @@
 		DBF5AA672569068D007824D7 /* hover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF5AA692569068D007824D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBF5AA6A2569068D007824D7 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		DBF5AA7B256906C9007824D7 /* hover.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = hover.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +48,7 @@
 		DBF5AA522569068A007824D7 = {
 			isa = PBXGroup;
 			children = (
+				DBF5AA7B256906C9007824D7 /* hover.entitlements */,
 				DBF5AA572569068B007824D7 /* Shared */,
 				DBF5AA612569068D007824D7 /* iOS */,
 				DBF5AA682569068D007824D7 /* macOS */,
@@ -320,6 +322,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = hover.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6UR9TA6744;
 				ENABLE_PREVIEWS = YES;
@@ -332,8 +335,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.janhovland.hover;
 				PRODUCT_NAME = hover;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -342,6 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = hover.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6UR9TA6744;
 				ENABLE_PREVIEWS = YES;
@@ -354,8 +359,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.janhovland.hover;
 				PRODUCT_NAME = hover;
 				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
